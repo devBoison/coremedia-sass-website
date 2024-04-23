@@ -1,3 +1,187 @@
-.welcome-heading{
-    color: crimson;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&family=Sacramento&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins-regular,sans-serif;
 }
+
+
+:root{
+    ---white: #fff;
+    ---shadow-gray: #ccc;
+}
+
+.nav-bar{
+    .logo-healine{
+        font-size: 24px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:32px 0;
+}
+
+.nav-items{
+    li{
+        padding: 0 10px;
+    }
+ font-size: 16px;
+ display: flex;
+ align-items: center;
+ list-style: none;   
+}
+
+
+
+.nav-bar-sm{
+    >img{
+       width: 35px;
+       height: 35px; 
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 599px)  and (min-width: 220px){
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar-sm{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .nav-bar-sm{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 299px){
+    .nav-bar-sm{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+    }
+}
+
+
+//Header and Hero
+.angled-arrow{
+    transform: rotate(22.5deg);
+}
+
+header{
+    height: 80vh;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px){
+    .hero-bg-img{
+        background-image: url('/src/assets/pexels-tranmautritam-245032.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 599px)  and (min-width: 220px){
+    .width-30,.width-40, .width-50, .width-60{
+        width: 100% !important;
+    };
+    .margin-l-120{
+        margin-left: 0 !important;
+    }
+}
+
+
+//Typography
+h1{
+    font-size: 72px;
+}
+
+//Utilities
+
+.width-60{
+    width: 60%;
+}
+.width-30{
+    width:30%;
+}
+.width-40{
+    width: 40%;
+}
+.width-50{
+    width:50%;
+}
+.width-auto{
+    width: auto;
+}
+
+.padding-10{
+    padding: 10px;
+}
+.padding-20{
+    padding: 20px;
+}
+.padding-40{
+    padding: 40px;
+}
+.padding-x-10{
+    padding: 0 40px;
+}
+.padding-y-10{
+    padding: 10px 0;
+}
+.margin-t-10{
+    margin-top:10px
+}
+.margin-l-120{
+    margin-left: 120px;
+}
+.line-h{
+    line-height: 1.3rem;
+}
+.bg-white{
+    background-color: var(---white);
+}
+
+//Components
+//Button
+button:hover{
+    cursor: pointer;
+}
+
+//Typography
+.text-white{
+    color: var(---white);
+}
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
