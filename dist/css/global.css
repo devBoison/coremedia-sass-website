@@ -9,6 +9,7 @@
 :root {
   ---white: #fff;
   ---shadow-gray: #ccc;
+  --custom-blue: #187feb;
 }
 
 .nav-bar {
@@ -72,7 +73,6 @@
 
 header {
   height: 80vh;
-  padding: 40px;
   display: flex;
   align-items: center;
 }
@@ -89,18 +89,34 @@ header {
   .width-30, .width-40, .width-50, .width-60 {
     width: 100% !important;
   }
+  .margin-y-120 {
+    margin: 20px 0 !important;
+  }
   .margin-l-120 {
-    margin-left: 0 !important;
+    margin-left: 10px !important;
+  }
+  .padding-40 {
+    padding: 20px !important;
+  }
+  .grid {
+    display: block !important;
   }
 }
-h1 {
-  font-size: 72px;
+.featured-area {
+  width: 580px;
+  height: 540px;
+  background-image: url("/src/assets/pexels-christina-morillo-1181317.jpg");
+  background-size: cover;
 }
 
-.width-60 {
-  width: 60%;
+@media only screen and (max-width: 599px) and (min-width: 220px) {
+  .featured-area {
+    display: none;
+  }
+  .hidden-sm {
+    display: none;
+  }
 }
-
 .width-30 {
   width: 30%;
 }
@@ -111,6 +127,14 @@ h1 {
 
 .width-50 {
   width: 50%;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.width-70 {
+  width: 70%;
 }
 
 .width-auto {
@@ -137,8 +161,36 @@ h1 {
   padding: 10px 0;
 }
 
+.margin-10 {
+  margin: 10px;
+}
+
+.margin-x-40 {
+  margin: 0 40px;
+}
+
+.margin-y-10 {
+  margin: 10px 0;
+}
+
+.margin-y-20 {
+  margin: 20px 0;
+}
+
+.margin-y-40 {
+  margin: 40px 0;
+}
+
 .margin-t-10 {
   margin-top: 10px;
+}
+
+.margin-t-40 {
+  margin-top: 40px;
+}
+
+.margin-y-120 {
+  margin: 120px 0;
 }
 
 .margin-l-120 {
@@ -149,12 +201,80 @@ h1 {
   line-height: 1.3rem;
 }
 
+.line-h-05 {
+  line-height: 1.5;
+}
+
 .bg-white {
   background-color: var(---white);
 }
 
+.flex {
+  display: flex;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-right {
+  justify-content: right;
+}
+
+.flex-space-even {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 50% 50%;
+}
+
 button:hover {
   cursor: pointer;
+}
+
+.outline-button, .primary-btn {
+  padding: 14px 24px;
+  background-color: var(--custom-blue);
+  color: var(---white);
+  border: unset;
+  outline: unset;
+  border-radius: 4px;
+}
+
+.outline-button {
+  color: var(--custom-blue);
+  background-color: unset;
+  border: 2px solid var(--custom-blue);
+}
+
+h4 {
+  font-size: 12px;
+  color: var(---shadow-gray);
+}
+
+.heading-lg {
+  font-size: 72px;
+}
+
+.heading-md {
+  font-size: 40px;
+}
+
+.heading-sm {
+  font-size: 20px;
 }
 
 .text-white {
