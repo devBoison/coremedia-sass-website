@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/global.css"/>
+    <link rel="stylesheet" href="./dist/css//global.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -12,10 +12,10 @@
         <div class="logo-healine">website marker</div>
         <div>
             <ul class="nav-items">
-                <li>Home</li>
-                <li>About us</li>
-                <li>Services</li>
-                <li>Project</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
                 <li>
                     <input type="button" value="contact Us" class="primary-btn">
                 </li>
@@ -30,9 +30,9 @@
     </nav>
     
 
-    <main>
+    <main id="home">
         <header class="hero-bg-img">
-            <div class="bg-white width-50 padding-40 margin-l-120 border-rounded-normal drop-shadow-normal">
+            <div class="bg-white width-50 margin-y-40 padding-40 margin-l-120 margin-r-120 border-rounded-normal drop-shadow-normal">
             <h1 class="heading-lg">We Build Your Dream Website For You</h1>
             <p class="width-60 line-h padding-y-10">We will transform your idea into a stunning website masterpiece that combine seamless function and user experience</p>
 
@@ -44,7 +44,7 @@
         </header>
 
         <!-- Stats section -->
-        <section class="flex margin-x-40 width-70 margin-y-120 margin-center">
+        <section class="flex width-70 margin-center margin-y-120" id="about">
             <div class="flex flex-justify-right flex-align-center gap-20 hidden-sm">
                 <div class="featured-area margin-10"></div>
             </div>
@@ -80,10 +80,10 @@
         </section>
 
         <!-- Services section -->
-        <section class="flex margin-x-40 width-70 margin-y-120  margin-center">
+        <section class="flex width-70 margin-center margin-y-120" id="service">
             <div class="padding-40 padding-l-40">
-                <h2 class="heading-md width-60 margin-b-40">Our Services</h2>
-                <div class="flex flex-align-center margin-y-10">
+                <h2 class="heading-md width-60 margin-b-20">Our Services</h2>
+                <div class="flex flex-align-center">
                     <div class="icon-backdrop padding-10">
                         <img src="./src/assets/accelerate.svg" class="icon-img"/>
                     </div>
@@ -119,7 +119,7 @@
                         <p class="padding-y-10">Researching, documenting and analysing relevant data to tailor unique product experiences and user journeys for your customers</p>
                     </div>
                 </div>
-                <div class="margin-t-40">
+                <div class="margin-y-40">
                     <button type="button" role="button" class="outline-button margin-t-10 flex flex-align-center">
                         View More
                         <img src="./src/assets/arrow-right-blue.svg" class="angled-arrow arrow-icon margin-l-10" alt="arrow right"/> 
@@ -138,10 +138,9 @@
                 </div>
             </div>
         </section>
-
-        <section class="flex flex-align-center gray-wall-section width-100 height-section padding-40">
+        <section class="flex flex-align-center gray-wall-section width-100 height-section padding-40" id="testimonial">
             <div class="flex flex-align-center margin-x-40 width-70 margin-center cascade-col">
-                <h2 class="heading-md margin-y-40">What our clients say about us</h2>
+                <h2 class="heading-md margin-t-40">What our clients say about us</h2>
                 <div class="ticket-card padding-20 margin-x-40">
                     <div class="flex flex-align-center padding-20">
                         <img src="./src/assets/person-a.jpg" alt="girl profile" class="profile-img"/>
@@ -178,6 +177,43 @@
             </div>
         </section>
     </main>
+    <footer class="width-100 height-footer margin-0 flex flex-align-center">
+        <div class="width-90 margin-center padding-40 margin-x-40 footer-section line-h-05">
+            <div class="padding-y-20">
+                <h3>Website marker</h3>
+                <p class="width-60">We are an agency that is passionate about transforming your dream website or app into stunning tangible products.</p>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Projects</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li>Residence</li>
+                    <li>Commercial</li>
+                    <li>Interior Design</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Help Centre</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                    <li>Support</li>
+                </ul>
+
+            </div>
+        </div>
+        <hr/>
+    </footer>
+    <div class="footnote padding-x-20 padding-y-20">
+        &copy; 2024 Webmarker. All Rights Reserved.
+      </div>
 
 </body>
 </html>

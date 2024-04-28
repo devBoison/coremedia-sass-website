@@ -1,0 +1,60 @@
+//Components
+  //custom
+  .service-box-a, .service-box-b, .service-box-b{
+    background-image: url('/src/assets/ux.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .service-box-a{
+    border-top-left-radius: 14px;
+  }
+
+  .service-box-b{
+    border-bottom-left-radius: 14px;
+    background-image: url('/src/assets/coding.jpg');
+  }
+  .service-box-c{
+    background-image: url('/src/assets/person-c.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+.gray-wall-section{
+    background-color: var(--lily-gray);
+}
+ 
+.ticket-card{
+    width: 620px;
+    min-height: 420px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.footer-section{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+  //small screens
+@media only screen and (max-width: 599px)  and (min-width: 220px){
+    .service-box-a, .service-box-b, .service-box-c{
+        display: none;
+    }
+    .ticket-card{
+        width: 80%;
+        margin: 40px 0;
+        animation: none;
+    }
+    .gray-wall-section{
+        height: max-content;
+    }
+    .footer-section{
+      flex-direction: column;
+      justify-content: left;
+    }
+}

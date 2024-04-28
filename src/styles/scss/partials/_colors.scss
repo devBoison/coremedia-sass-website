@@ -1,0 +1,29 @@
+
+*{
+    color: var(--text-gray)
+}
+
+:root{
+    ---white: #fff;
+    ---shadow-gray: #ccc;
+    --custom-blue: #187feb;
+    --lily-gray: #f4f4f4;
+    --text-gray: #393939;
+    --black: #000;
+}
+
+h4{
+    color: var(---shadow-gray);
+}
+
+footer, .footnote{
+    background-color: var(--black) !important;
+}
+
+footer > div > div > *, footer > div > div > ul li, .footnote{
+    list-style: none;
+    color: var(---white) !important;
+}
+.footnote{
+    text-align: right;
+}

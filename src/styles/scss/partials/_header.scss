@@ -1,0 +1,43 @@
+//Header and Hero
+.arrow-icon{
+    width: 20px;
+    height: 20px;
+}
+.angled-arrow{
+    transform: rotate(-25deg);
+}
+
+header{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+//small screens
+@media only screen and (max-width: 599px)  and (min-width: 220px) {
+    header{
+        height: auto;
+    }
+}
+
+
+
+
+//Hero section
+.featured-area{
+    width: 580px;
+    height: 540px;
+    border-radius: 14px;
+    background-image: url('/src/assets/pexels-christina-morillo-1181317.jpg');
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+//small screens
+@media only screen and (max-width: 599px)  and (min-width: 220px){
+    .featured-area{
+        display: none;
+    }
+    .hidden-sm{
+        display: none;
+    }
+}
+

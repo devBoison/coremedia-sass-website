@@ -3,147 +3,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: poppins-regular, sans-serif;
-  color: #393939;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: center;
 }
 
-:root {
-  ---white: #fff;
-  ---shadow-gray: #ccc;
-  --custom-blue: #187feb;
-  --lily-gray: #f4f4f4;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 32px 0;
-}
-.nav-bar .logo-healine {
-  font-size: 24px;
-  font-weight: 900;
-}
-
-.nav-items {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  list-style: none;
-}
-.nav-items li {
-  padding: 0 10px;
-}
-
-.nav-bar-sm {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-.nav-bar-sm > img {
-  width: 35px;
-  height: 35px;
-}
-
-@media only screen and (max-width: 599px) and (min-width: 220px) {
-  .nav-bar {
-    display: none;
-  }
-  .nav-bar-sm {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .nav-bar-sm {
-    display: none;
-  }
-  .nav-bar {
-    display: flex;
-  }
-}
-@media only screen and (max-width: 299px) {
-  .nav-bar-sm {
-    display: none;
-  }
-  .nav-bar {
-    display: none;
-  }
-}
-.arrow-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.angled-arrow {
-  transform: rotate(-25deg);
-}
-
-header {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-}
-
-@media only screen and (max-width: 599px) and (min-width: 220px) {
-  header {
-    height: auto;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .hero-bg-img {
-    background-image: url("/src/assets/pexels-tranmautritam-245032.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media only screen and (max-width: 599px) and (min-width: 220px) {
-  .width-30, .width-40, .width-50, .width-60, .width-70, .width-80, .width-90, .width-100 {
-    width: 100% !important;
-  }
-  .margin-y-120 {
-    margin: 0 0 !important;
-  }
-  .margin-l-120 {
-    margin-left: 10px !important;
-  }
-  .padding-40 {
-    padding: 20px !important;
-  }
-  .padding-l-40 {
-    padding-left: 0;
-  }
-  .padding-40 {
-    padding: 0;
-  }
-  .padding-l-40 {
-    padding-left: 0;
-  }
-  .grid {
-    display: block !important;
-  }
-  .cascade-col {
-    flex-direction: column;
-  }
-}
-.featured-area {
-  width: 580px;
-  height: 540px;
-  border-radius: 14px;
-  background-image: url("/src/assets/pexels-christina-morillo-1181317.jpg");
-  background-size: cover;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-@media only screen and (max-width: 599px) and (min-width: 220px) {
-  .featured-area {
-    display: none;
-  }
-  .hidden-sm {
-    display: none;
-  }
-}
 .width-30 {
   width: 30%;
 }
@@ -188,6 +52,10 @@ header {
   height: 680px;
 }
 
+.height-footer {
+  height: max-content;
+}
+
 .padding-5 {
   padding: 5px;
 }
@@ -226,6 +94,10 @@ header {
 
 .padding-l-20 {
   padding-left: 20px;
+}
+
+.margin-0 {
+  margin: 0 !important;
 }
 
 .margin-10 {
@@ -356,53 +228,80 @@ header {
   grid-template-columns: 40% 40%;
 }
 
-.icon-img {
-  width: 35px;
-  height: 35px;
+footer > div > div > *, footer > div > div > ul li {
+  list-style: none;
+  color: var(---white) !important;
+  line-height: 2rem;
 }
 
-.profile-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+@media only screen and (max-width: 599px) and (min-width: 220px) {
+  .width-30, .width-40, .width-50, .width-60, .width-70, .width-80, .width-90, .width-100 {
+    width: 100% !important;
+  }
+  .margin-y-120 {
+    margin: 0 0 !important;
+  }
+  .margin-l-120 {
+    margin-left: 10px !important;
+  }
+  .margin-r-120 {
+    margin-right: 10px !important;
+  }
+  .padding-40 {
+    padding: 20px !important;
+  }
+  .padding-l-40 {
+    padding-left: 0;
+  }
+  .padding-40 {
+    padding: 0;
+  }
+  .padding-l-40 {
+    padding-left: 0;
+  }
+  .grid {
+    display: block !important;
+  }
+  .cascade-col {
+    flex-direction: column;
+  }
+}
+* {
+  color: var(--text-gray);
 }
 
-.icon-backdrop {
-  background-color: var(--lily-gray);
+:root {
+  ---white: #fff;
+  ---shadow-gray: #ccc;
+  --custom-blue: #187feb;
+  --lily-gray: #f4f4f4;
+  --text-gray: #393939;
+  --black: #000;
 }
 
-.col-img {
-  width: 270px;
-  height: 310px;
+h4 {
+  color: var(---shadow-gray);
 }
 
-.col-img-lg {
-  width: 270px;
-  height: 640px;
+footer, .footnote {
+  background-color: var(--black) !important;
 }
 
-button:hover {
-  cursor: pointer;
+footer > div > div > *, footer > div > div > ul li, .footnote {
+  list-style: none;
+  color: var(---white) !important;
 }
 
-.outline-button, .primary-btn {
-  padding: 14px 24px;
-  background-color: var(--custom-blue);
-  color: var(---white);
-  border: unset;
-  outline: unset;
-  border-radius: 4px;
+.footnote {
+  text-align: right;
 }
 
-.outline-button {
-  color: var(--custom-blue);
-  background-color: unset;
-  border: 2px solid var(--custom-blue);
+* {
+  font-family: poppins-regular, sans-serif;
 }
 
 h4 {
   font-size: 12px;
-  color: var(---shadow-gray);
 }
 
 .heading-lg {
@@ -415,10 +314,6 @@ h4 {
 
 .heading-sm {
   font-size: 20px;
-}
-
-.text-white {
-  color: var(---white);
 }
 
 .text-bold {
@@ -449,6 +344,162 @@ h4 {
   }
   .heading-md {
     font-size: 30px;
+  }
+}
+button:hover {
+  cursor: pointer;
+}
+
+.outline-button, .primary-btn {
+  padding: 14px 24px;
+  background-color: var(--custom-blue);
+  color: var(---white);
+  border: unset;
+  outline: unset;
+  border-radius: 4px;
+}
+
+.outline-button {
+  color: var(--custom-blue);
+  background-color: unset;
+  border: 2px solid var(--custom-blue);
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 0;
+}
+.nav-bar .logo-healine {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.nav-items {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-items li {
+  padding: 0 10px;
+}
+
+.nav-bar-sm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav-bar-sm > img {
+  width: 35px;
+  height: 35px;
+}
+
+@media only screen and (max-width: 599px) and (min-width: 220px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-bar-sm {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .nav-bar-sm {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 299px) {
+  .nav-bar-sm {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
+  }
+}
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.angled-arrow {
+  transform: rotate(-25deg);
+}
+
+header {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 599px) and (min-width: 220px) {
+  header {
+    height: auto;
+  }
+}
+.featured-area {
+  width: 580px;
+  height: 540px;
+  border-radius: 14px;
+  background-image: url("/src/assets/pexels-christina-morillo-1181317.jpg");
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media only screen and (max-width: 599px) and (min-width: 220px) {
+  .featured-area {
+    display: none;
+  }
+  .hidden-sm {
+    display: none;
+  }
+}
+.icon-img {
+  width: 35px;
+  height: 35px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icon-backdrop {
+  background-color: var(--lily-gray);
+}
+
+.col-img {
+  width: 270px;
+  height: 310px;
+}
+
+.col-img-lg {
+  width: 270px;
+  height: 640px;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-bg-img {
+    background-image: url("/src/assets/pexels-tranmautritam-245032.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
 .service-box-a, .service-box-b, .service-box-b {
@@ -487,6 +538,11 @@ h4 {
   animation: float 6s ease-in-out infinite;
 }
 
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 599px) and (min-width: 220px) {
   .service-box-a, .service-box-b, .service-box-c {
     display: none;
@@ -499,16 +555,9 @@ h4 {
   .gray-wall-section {
     height: max-content;
   }
-}
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
+  .footer-section {
+    flex-direction: column;
+    justify-content: left;
   }
 }
 
