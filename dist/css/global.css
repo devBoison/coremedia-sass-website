@@ -288,12 +288,7 @@ footer, .footnote {
 }
 
 footer > div > div > *, footer > div > div > ul li, .footnote {
-  list-style: none;
   color: var(---white) !important;
-}
-
-.footnote {
-  text-align: right;
 }
 
 * {
@@ -395,6 +390,10 @@ button:hover {
 .nav-bar-sm > img {
   width: 35px;
   height: 35px;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none !important;
 }
 
 @media only screen and (max-width: 599px) and (min-width: 220px) {
@@ -541,6 +540,18 @@ header {
 .footer-section {
   display: flex;
   justify-content: space-evenly;
+}
+
+footer > div > div > *, footer > div > div > ul li, .footnote {
+  list-style: none;
+}
+
+.footnote {
+  text-align: right;
+}
+
+.link-style {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 599px) and (min-width: 220px) {

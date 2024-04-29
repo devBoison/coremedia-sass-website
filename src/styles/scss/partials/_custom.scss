@@ -39,6 +39,16 @@
 }
 
 
+footer > div > div > *, footer > div > div > ul li, .footnote{
+  list-style: none;
+}
+.footnote{
+  text-align: right;
+}
+
+.link-style{
+  text-decoration: none;
+}
 
   //small screens
 @media only screen and (max-width: 599px)  and (min-width: 220px){
