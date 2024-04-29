@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&family=Sacramento&display=swap');
+
+*{
+    font-family: poppins-regular,sans-serif;
+}
+
+
+//Typography
+h4{
+    font-size: 12px;
+}
+.heading-lg{
+    font-size: 68px;
+}
+.heading-md{
+    font-size: 40px;
+}
+.heading-sm{
+    font-size: 20px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  //small screens
+  @media only screen and (max-width: 599px)  and (min-width: 220px){
+    .heading-lg{
+        font-size: 36px;   
+    }
+    .heading-md{
+        font-size: 30px;
+    }
+}

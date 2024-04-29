@@ -1,0 +1,61 @@
+.nav-bar{
+    .logo-healine{
+        font-size: 24px;
+        font-weight: 900;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:32px 0;
+}
+
+.nav-items{
+    li{
+        padding: 0 10px;
+    }
+ font-size: 16px;
+ display: flex;
+ align-items: center;
+ list-style: none;   
+}
+
+.nav-bar-sm{
+    >img{
+       width: 35px;
+       height: 35px; 
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 599px)  and (min-width: 220px){
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar-sm{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .nav-bar-sm{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 299px){
+    .nav-bar-sm{
+        display: none;
+    }
+    .nav-bar{
+        display: none;
+    }
+}

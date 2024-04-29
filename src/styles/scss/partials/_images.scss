@@ -1,0 +1,32 @@
+
+//img
+.icon-img{
+    width: 35px;
+    height: 35px;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.icon-backdrop{
+    background-color: var(--lily-gray);
+}
+.col-img{
+    width: 270px;
+    height: 310px;
+}
+.col-img-lg{
+    width: 270px;
+    height: 640px;
+}
+
+//medium to large screens
+@media only screen and (min-width: 600px){
+    .hero-bg-img{
+        background-image: url('/src/assets/pexels-tranmautritam-245032.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

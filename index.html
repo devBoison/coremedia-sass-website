@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/global.css"/>
+    <link rel="stylesheet" href="./dist/css//global.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -12,10 +12,10 @@
         <div class="logo-healine">website marker</div>
         <div>
             <ul class="nav-items">
-                <li>Home</li>
-                <li>About us</li>
-                <li>Services</li>
-                <li>Project</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
                 <li>
                     <input type="button" value="contact Us" class="primary-btn">
                 </li>
@@ -30,27 +30,28 @@
     </nav>
     
 
-    <main>
+    <main id="home">
         <header class="hero-bg-img">
-            <div class="bg-white width-50 padding-40 margin-l-120">
-            <h1 class="heading-lg">We build Your Dream Website For You</h1>
+            <div class="bg-white width-50 margin-y-40 padding-40 margin-l-120 margin-r-120 border-rounded-normal drop-shadow-normal">
+            <h1 class="heading-lg">We Build Your Dream Website For You</h1>
             <p class="width-60 line-h padding-y-10">We will transform your idea into a stunning website masterpiece that combine seamless function and user experience</p>
 
-            <button type="button" class="margin-t-10 primary-btn" role="button">
-                Get Started <span class="angled-arrow">&rarr;</span>
+            <button type="button" class="margin-t-10 primary-btn flex flex-align-center" role="button">
+                Get Started 
+                    <img src="./src/assets/arrow-right.svg" class="angled-arrow arrow-icon margin-l-10" alt="arrow right"/>
             </button>
         </div>
         </header>
 
         <!-- Stats section -->
-        <section class="grid grid-cols-2 margin-x-40 margin-y-120">
+        <section class="flex width-70 margin-center margin-y-120" id="about">
             <div class="flex flex-justify-right flex-align-center gap-20 hidden-sm">
                 <div class="featured-area margin-10"></div>
             </div>
             
             <div class="padding-40">
-                <h3 class="heading-md width-60">We have the expertise to craft stunning websites</h3>
-                <p class="padding-y-10 width-70 line-h-05 margin-y-20">We boast of over a decade of experience. Our team will help turn your visions into stunning
+                <h3 class="heading-md ">We have the expertise to craft stunning websites</h3>
+                <p class="padding-y-10 width-90 line-h-05 margin-y-20">We boast of over a decade of experience. Our team will help turn your visions into stunning
                     web experiences. Our mission is to create digital products that look and feel good, including website, 
                     web apps, systems interfaces and graphical interactions.
                 </p>  
@@ -68,13 +69,151 @@
                     <h4 class="heading-sm">products developed</h4>
                 </div>
             </div>
-            <div class="margin-y-40">
-                <button type="button" role="button" class="outline-button">About Us</button>
+            <div class="margin-t-40">
+                <button type="button" role="button" class="outline-button margin-t-10 flex flex-align-center">
+                    About Us
+                    <img src="./src/assets/arrow-right-blue.svg" class="angled-arrow arrow-icon margin-l-10" alt="arrow right"/>
+                </button>
             </div>
             </div>
 
         </section>
+
+        <!-- Services section -->
+        <section class="flex width-70 margin-center margin-y-120" id="service">
+            <div class="padding-40 padding-l-40">
+                <h2 class="heading-md width-60 margin-b-20">Our Services</h2>
+                <div class="flex flex-align-center">
+                    <div class="icon-backdrop padding-10">
+                        <img src="./src/assets/accelerate.svg" class="icon-img"/>
+                    </div>
+                    <div class="padding-l-10 width-70 line-h-05">
+                        <h3>Web Apps</h3>
+                        <p class="padding-y-10">Developing single page and progressive web application to deliever your digital business to customers</p>
+                    </div>
+                </div>
+                <div class="flex flex-align-center margin-y-10">
+                    <div class="icon-backdrop padding-10">
+                        <img src="./src/assets/website-configuration.svg" class="icon-img"/>
+                    </div>
+                    <div class="padding-l-10 width-70 line-h-05">
+                        <h3>Websites</h3>
+                        <p class="padding-y-10">Designing and building simple and complex website to reflect you business's corporate standing.</p>
+                    </div>
+                </div>
+                <div class="flex flex-align-center margin-y-10">
+                    <div class="icon-backdrop padding-10">
+                        <img src="./src/assets/interface-software-code.svg" class="icon-img"/>
+                    </div>
+                    <div class="padding-l-10 width-70 line-h-05">
+                        <h3>System Interactions</h3>
+                        <p class="padding-y-10">Designing and developing highly performant and scalable software products to product against tight deadlines.</p>
+                    </div>
+                </div>
+                <div class="flex flex-align-center margin-y-10">
+                    <div class="icon-backdrop padding-10">
+                        <img src="./src/assets/user-to-device.svg" class="icon-img"/>
+                    </div>
+                    <div class="padding-l-10 width-70 line-h-05">
+                        <h3>User Experinces</h3>
+                        <p class="padding-y-10">Researching, documenting and analysing relevant data to tailor unique product experiences and user journeys for your customers</p>
+                    </div>
+                </div>
+                <div class="margin-y-40">
+                    <button type="button" role="button" class="outline-button margin-t-10 flex flex-align-center">
+                        View More
+                        <img src="./src/assets/arrow-right-blue.svg" class="angled-arrow arrow-icon margin-l-10" alt="arrow right"/> 
+                    </button>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-justify-center">
+                    <div class="flex flex-direction-col">
+                        <div class="col-img margin-y-10 service-box-a"></div>
+                        <div class="col-img margin-y-10 service-box-b"></div>
+                    </div>
+                    <div>
+                        <div class="col-img-lg margin-l-20 margin-t-10 service-box-c"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-align-center gray-wall-section width-100 height-section padding-40" id="testimonial">
+            <div class="flex flex-align-center margin-x-40 width-70 margin-center cascade-col">
+                <h2 class="heading-md margin-t-40">What our clients say about us</h2>
+                <div class="ticket-card padding-20 margin-x-40">
+                    <div class="flex flex-align-center padding-20">
+                        <img src="./src/assets/person-a.jpg" alt="girl profile" class="profile-img"/>
+                        <div class="padding-x-5">
+                            <p class="text-bold">Abena Mccoy Getty</p>
+                            <p class="display-block">Entrepreneur</p>
+                        </div>
+                    </div> 
+                    <p class="line-h-05">
+                        I had the pleasure of working with website marker for our web app development needs, and I must say, it was a fantastic experience! 
+                        The team's attention to detail and creativity resulted in a stunning and user-friendly web app that exceeded our expectations. 
+                        Their professionalism, timeliness, and ongoing support truly set them apart. 
+                        I highly recommend website marker for anyone looking for top-notch web design and development services.
+                    </p>
+                </div>
+
+                <div class="ticket-card padding-20 margin-x-40">
+                    <div class="flex flex-align-center padding-10">
+                        <img src="./src/assets/person-b.jpg" alt="boy profile" class="profile-img"/>
+                        <div class="padding-5">
+                            <p class="text-bold">Kwesi yankey-Ampah</p>
+                            <p class="display-block">Musician</p>
+                        </div>
+                    </div>
+
+                    <p class="line-h-05">
+                        Working with website marker on our web design project was a game-changer for our business. 
+                        They took our vision and turned it into a reality with a modern, sleek, and highly functional website. 
+                        The team's expertise in web design, coupled with their collaborative approach, made the entire process smooth and enjoyable. 
+                        We've received numerous compliments on our website, and it has significantly boosted our online presence. 
+                        Thank you, website marker, for your outstanding work!
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="width-100 height-footer margin-0 flex flex-align-center">
+        <div class="width-90 margin-center padding-40 margin-x-40 footer-section line-h-05">
+            <div class="padding-y-20">
+                <h3>Website marker</h3>
+                <p class="width-60">We are an agency that is passionate about transforming your dream website or app into stunning tangible products.</p>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Projects</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li>Residence</li>
+                    <li>Commercial</li>
+                    <li>Interior Design</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Help Centre</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQs</li>
+                    <li>Support</li>
+                </ul>
+
+            </div>
+        </div>
+        <hr/>
+    </footer>
+    <div class="footnote padding-x-20 padding-y-20">
+        &copy; 2024 Webmarker. All Rights Reserved.
+      </div>
 
 </body>
 </html>

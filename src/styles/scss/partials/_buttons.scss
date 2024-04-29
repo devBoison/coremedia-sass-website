@@ -1,0 +1,18 @@
+//Button
+button:hover{
+    cursor: pointer;
+}
+.outline-button, .primary-btn{
+    padding: 14px 24px;
+    background-color: var(--custom-blue);
+    color: var(---white);
+    border: unset;
+    outline: unset;
+    border-radius: 4px;
+}
+.outline-button{
+    color: var(--custom-blue);
+    background-color: unset;
+    border: 2px solid var(--custom-blue);
+}
+
